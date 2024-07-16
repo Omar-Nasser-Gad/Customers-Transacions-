@@ -1,0 +1,59 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Transactions</title>
+    <link rel="icon" href="images/logo.png">
+    <!-- --------------- fonts link -------------- -->
+
+
+    <!-- --------------- font-awesome link -------------- -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- --------------- Bootstrap link -------------- -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- --------------- Style Sheet link -------------- -->
+    <link rel="stylesheet" href="css/style.css">
+
+<body>
+    <main class="position-relative">
+        <div class="container mt-5 d-flex flex-column align-items-center justify-content-center">
+            <h1 class=" text-center position-relative ">Customers Transactions</h1>
+            <div class="w-100 d-flex flex-column py-3">
+                <label for="filterByName" class="form-label">Filter by Customer Name:</label>
+                <input type="text" id="filterByName" class="form-control" placeholder="Enter customer name">
+            </div>
+            <div class="w-100 d-flex flex-column pb-3">
+                <label for="filterByAmount" class="form-label">Filter by Transaction Amount:</label>
+                <input type="number" id="filterByAmount" class="form-control" placeholder="Enter transaction amount">
+            </div class="rounded-3">
+            <table class="table table-bordered mt-3 bg-light rounded rounded-3">
+                <thead>
+                    <tr class="rounded-3 ">
+                        <th class="bg-dark text-white rounded-2">Customer Name</th>
+                        <th class="bg-dark text-white rounded-2">Transaction Date</th>
+                        <th class="bg-dark text-white rounded-2">Transaction Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionTable" class="rounded-3">
+                </tbody>
+            </table>
+            <canvas id="transactionGraph" width="400" height="200"></canvas>
+            <button id="btnUp" class="btn bg-danger  text-white p-2">
+                <i class="fa-arrow-alt-circle-up fas"></i>
+            </button>
+
+        </div>
+        
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
+
